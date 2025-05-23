@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Ankita Gautam</title>
+  <style>
+    :root {
+      --bg-color: #e7dfd8;
+      --text-color: #231f20;
+      --primary-color: green;
+      --header-footer-bg: #333;
+      --nav-bg: #fff;
+      --hover-color: darkgreen;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--header-footer-bg);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--hover-color);
+      color: white;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 30px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 24px;
+      margin-bottom: 30px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 8px;
+    }
+
+    .project-card {
+      background-color: white;
+      color: var(--text-color);
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card strong {
+      display: block;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--primary-color);
+    }
+
+    .project-card ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    footer {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header h1, h2 {
+        font-size: 22px;
+      }
+
+      .project-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Projects of Ankita Gautam</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>PROJECTS</h2>
+
+    <div class="project-card">
+      <strong>Consumer Behavior Analysis in the Fashion Industry</strong>
+      <ul>
+        <li>Surveyed consumer preferences for Blinkit and analyzed decision-making factors.</li>
+        <li>Studied branding, pricing, and social media influences.</li>
+        <li>Explored emotional vs rational shopping behavior in fashion retail.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <strong>Retail Store Analysis</strong>
+      <ul>
+        <li>Conducted in-store visits and customer interviews.</li>
+        <li>Evaluated visual merchandising and shopper interaction.</li>
+        <li>Provided layout and service improvements for better in-store engagement.</li>
+      </ul>
+    </div>
+
+    <div class="project-card">
+      <strong>Sustainability in Fashion</strong>
+      <ul>
+        <li>Explored sustainable fabrics, ethical sourcing, and eco-conscious production.</li>
+        <li>Assessed consumer response to green marketing initiatives.</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankita Gautam</p>
+  </footer>
+
+</body>
+</html>

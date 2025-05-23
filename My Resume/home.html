@@ -1,0 +1,172 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home - Ankita Gautam</title>
+  <style>
+    :root {
+      --primary-color: green;
+      --bg-color: #e7dfd8;
+      --text-color: #231f20;
+      --header-footer-bg: #333;
+      --header-footer-text: white;
+      --nav-bg: #fff;
+      --hover-color: darkgreen;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--header-footer-bg);
+      color: var(--header-footer-text);
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--hover-color);
+      color: white;
+    }
+
+    .section-heading {
+      max-width: 1000px;
+      margin: 40px auto 20px;
+      font-size: 24px;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .container:active {
+      transform: scale(0.98);
+    }
+
+    .container p {
+      margin-bottom: 20px;
+      text-align: justify;
+    }
+
+    footer {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .container {
+        margin: 0 20px 40px;
+        padding: 20px;
+      }
+
+      header h1,
+      .section-heading {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Welcome to Ankita Gautam's Portfolio</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Heading -->
+  <h2 class="section-heading">Welcome</h2>
+
+  <!-- Main Content -->
+  <div class="container">
+    <p>
+      Passionate about the intersection of fashion, business, and innovation, I am currently pursuing my Master of Fashion Management (MFM) at the National Institute of Fashion Technology (NIFT), Bangalore. With a strong foundation in market analysis, retail management, and brand strategy, I am developing expertise in understanding consumer behavior, fashion marketing, and supply chain dynamics.
+    </p>
+    <p>
+      I am particularly interested in emerging trends, sustainability, and the evolving role of technology in the fashion industry. My academic journey has equipped me with skills in merchandising and trend forecasting, allowing me to bridge the gap between creative vision and business strategy.
+    </p>
+    <p>
+      I am eager to collaborate with industry professionals, brands, and innovators to drive impactful solutions in fashion retail and branding. Open to networking and opportunities in brand management, retail strategy, and trend analysis.
+    </p>
+    <p>
+      Welcome, here you can explore my background, academic qualifications, projects, and contact information. Feel free to reach out to me if you have any questions or would like to collaborate!
+    </p>
+  </div>
+ 
+ 
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankita Gautam</p>
+  </footer>
+
+</body>
+</html>

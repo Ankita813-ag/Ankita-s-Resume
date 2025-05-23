@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Ankita Gautam</title>
+  <style>
+    :root {
+      --bg-color: #e7dfd8;
+      --text-color: #231f20;
+      --primary-color: green;
+      --header-footer-bg: #333;
+      --nav-bg: #fff;
+      --hover-color: darkgreen;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--header-footer-bg);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background-color: var(--nav-bg);
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-weight: bold;
+      font-size: 18px;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--hover-color);
+      color: white;
+    }
+
+    .section-heading {
+      max-width: 1000px;
+      margin: 40px auto 20px;
+      font-size: 24px;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      max-width: 1000px;
+      margin: 0 auto 40px;
+      padding: 30px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      gap: 40px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .container:active {
+      transform: scale(0.98);
+    }
+
+    .text-content {
+      flex: 2;
+    }
+
+    .text-content h3 {
+      font-size: 20px;
+      margin: 20px 0 10px;
+      color: var(--primary-color);
+    }
+
+    .text-content p {
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .image-container {
+      flex: 1;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      margin-bottom: 10px;
+    }
+
+    .image-container h3 {
+      font-size: 20px;
+      margin-top: 10px;
+      color: var(--text-color);
+    }
+
+    footer {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+      }
+
+      .text-content, .image-container {
+        width: 100%;
+      }
+
+      .image-container img {
+        max-width: 150px;
+      }
+
+      header h1, .section-heading {
+        font-size: 22px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>About Ankita Gautam</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Section Heading -->
+  <h2 class="section-heading">About Me</h2>
+
+  <!-- Main Content -->
+  <div class="container">
+    <!-- Left: Text -->
+    <div class="text-content">
+      <h3>Personal Details</h3>
+      <p><strong>Languages:</strong> English, Hindi</p>
+      <p><strong>Hobbies & Interests:</strong> Music, Trend Exploration, Reading</p>
+      <p><strong>Date of Birth:</strong> Jan 10, 2001</p>
+
+      <h3>Academic Credentials</h3>
+      <p><strong>Master of Fashion Management (MFM)</strong>, NIFT Bangalore – Currently in 2nd Semester</p>
+      <p><strong>BA</strong>, CSJMU Kanpur – Psychology, Political Science & English Literature</p>
+      <p><strong>Senior Secondary (12th)</strong>, Kendriya Vidyalaya, IIT Kanpur</p>
+      <p><strong>Secondary (10th)</strong>, Kendriya Vidyalaya, IIT Kanpur</p>
+    </div>
+
+    <!-- Right: Photo -->
+    <div class="image-container">
+      <img src="my photo.jpeg" alt="Ankita Gautam">
+      <h3>ANKITA GAUTAM</h3>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankita Gautam</p>
+  </footer>
+
+</body>
+</html>

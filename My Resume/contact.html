@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Ankita Gautam</title>
+  <style>
+    :root {
+      --bg-color: #e7dfd8;
+      --text-color: #231f20;
+      --primary-color: green;
+      --hover-color: darkgreen;
+      --card-bg: #ffffff;
+      --header-footer-bg: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    header, footer {
+      background-color: var(--header-footer-bg);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 15px 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: var(--text-color);
+      font-size: 18px;
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: var(--hover-color);
+      color: white;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px 20px;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 24px;
+      margin-bottom: 25px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 8px;
+    }
+
+    .contact-card {
+      background-color: var(--card-bg);
+      border-radius: 12px;
+      padding: 25px 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact-card p {
+      margin-bottom: 15px;
+      word-wrap: break-word;
+    }
+
+    .contact-card a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .contact-card a:hover {
+      color: var(--hover-color);
+    }
+
+    footer {
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      header h1, h2 {
+        font-size: 22px;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .container {
+        padding: 20px 15px;
+      }
+
+      .contact-card {
+        padding: 20px;
+      }
+
+      nav ul li a {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .contact-card p {
+        font-size: 16px;
+      }
+
+      nav ul li a {
+        padding: 6px 10px;
+      }
+
+      footer {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Contact Ankita Gautam</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h2>Contact Information</h2>
+    <div class="contact-card">
+      <p><strong>Mobile:</strong> 7607222994</p>
+      <p><strong>Email:</strong> <a href="mailto:ankitagautam813@gmail.com">ankitagautam813@gmail.com</a></p>
+      <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/ankita-gautam-8a4270330" target="_blank">linkedin.com/in/ankita-gautam-8a4270330</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ankita Gautam</p>
+  </footer>
+
+</body>
+</html>
